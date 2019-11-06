@@ -1,0 +1,110 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 1920px;
+    height: 1080px;
+    clip-path: polygon(0 0, 100% 0, 100% 52%, 0 72%);
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    animation-name: name;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+    font-size: 2rem;
+    color: white;
+    text-shadow:
+		-1px -1px 0 #b8c7dd,
+		1px -1px 0 #b8c7dd,
+		-1px 1px 0 #b8c7dd,
+		1px 1px 0 #b8c7dd;   
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    animation-name: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+    font-size: 4rem;
+    color: white;
+    text-shadow:
+		-1px -1px 0 #b8c7dd,
+		1px -1px 0 #b8c7dd,
+		-1px 1px 0 #b8c7dd,
+		1px 1px 0 #b8c7dd;   
+}
+
+.btn {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 1rem;
+    width: 100px;
+    height: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    opacity: 1;
+    animation-name: button;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+    transition-property: transform;
+    transition-duration: 1s;
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn1 {
+    top: 50%;
+    left: 40%;
+}
+
+.btn2 {
+    top: 50%;
+    left: 50%;
+}
+
+.btn3 {
+    top: 50%;
+    left: 60%;
+}
+
+.btn:hover {
+    transform: rotateY(360deg);
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+@keyframes button {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes heading {
+    0% {top: -1000px}
+    100% {top: 20%;}
+}
+
+@keyframes name {
+    0% {left: -1000px}
+    100% {left: 50%;}
+}
